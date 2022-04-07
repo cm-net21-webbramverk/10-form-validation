@@ -5,13 +5,14 @@ import { useState } from 'react'
 
 
 const PizzaForm = () => {
+	// Statevariabler för varje fält
 	const [address, setAddress] = useState('')
 	const [addressTouched, setAddressTouched] = useState(false)
 
 	
 	// Valideringsregler:
-	// Address får inte vara en tom sträng
-	// Bör sluta på ett tal - svårt att kolla
+	// - Address får inte vara en tom sträng
+	// - Bör sluta på ett tal - svårt att kolla
 	let addressIsValid = address.trim().length > 0
 	let addressMessage = ''
 	let addressCss = ''

@@ -6,13 +6,20 @@
 	border-radius: 1em;
 	margin: 0.4em;
 	padding: 0.3em 1em;
+	position: relative;
 }
 .form label { display: block; }
-.form input { display: block; border-radius: 0.2em; padding: 0.2em 0.5em; }
+.form input {
+	display: block;
+	border-radius: 0.2em;
+	padding: 0.2em 0.5em;
+	border-width: 4px;
+}
 .form .message {
 	margin: 0em;
 	opacity: 0.3;
 	font-size: 0.8em;
+	position: absolute;
 }
 .form section.valid input {
 	border-color: #2f982c;
